@@ -17,7 +17,7 @@ actor class Verifier() {
   type StudentProfile = Type.StudentProfile;
 
   let studentProfileStore = HashMap.HashMap<Principal, StudentProfile>(0, Principal.equal, Principal.hash);
-
+//Check the student profileö
   private func isRegistered(p : Principal) : Bool {
     var xProfile : ?StudentProfile = studentProfileStore.get(p);
 
